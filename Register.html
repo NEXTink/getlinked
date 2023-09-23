@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GetLinked</title>
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@200,400,700,500,600,1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./output/output.css">
+</head>
+
+<body class="bg-bg relative">
+
+    <header class="border-b border-b-stroke"
+        style="background-image: url('./assets/contact/reg.png'); background-size: cover; " class="relative">
+        <div class="">
+            <nav class="max-w-7xl mx-auto px-4 py-8 flex justify-between items-center">
+                <a href="/">
+                    <figure>
+                        <img src="./assets/getlinked.svg" alt="GetLinked Logo" class="h-6 md:h-8">
+                    </figure>
+                </a>
+                <ul class="hidden md:flex justify-between gap-4 items-center">
+                    <li>
+                        <a href="#" class="text-white text-md">Timeline</a>
+                    </li>
+                    <li><a href="#" class="text-white text-md">Overview</a></li>
+                    <li><a href="#" class="text-white text-md">FAQs</a></li>
+                    <li><a href="./contact.html"
+                            class="text-transparent  font-bold text-md bg-gradient-to-r to-[#903AFF] from-[#FE34B9] bg-clip-text">Contact</a>
+                    </li>
+                    <li>
+                        <a href="./Register.html"
+                            class="px-8 ml-4 rounded-sm py-3  ease-out duration-300 bg-gradient-to-r hover:bg-gradient-to-br to-[#903AFF] from-[#FE34B9] text-white">Register</a>
+                    </li>
+                </ul>
+
+                <div class="flex md:hidden ml-4 menu-nav">
+                    <button type="button"
+                        class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-200">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor"
+                            aria-hidden="true">
+                            <path
+                                d="M1.35714 0H8.14286C8.50279 0 8.84799 0.1475 9.1025 0.410051C9.35702 0.672601 9.5 1.0287 9.5 1.4C9.5 1.7713 9.35702 2.1274 9.1025 2.38995C8.84799 2.6525 8.50279 2.8 8.14286 2.8H1.35714C0.997206 2.8 0.652012 2.6525 0.397498 2.38995C0.142984 2.1274 0 1.7713 0 1.4C0 1.0287 0.142984 0.672601 0.397498 0.410051C0.652012 0.1475 0.997206 0 1.35714 0ZM10.8571 11.2H17.6429C18.0028 11.2 18.348 11.3475 18.6025 11.6101C18.857 11.8726 19 12.2287 19 12.6C19 12.9713 18.857 13.3274 18.6025 13.5899C18.348 13.8525 18.0028 14 17.6429 14H10.8571C10.4972 14 10.152 13.8525 9.8975 13.5899C9.64298 13.3274 9.5 12.9713 9.5 12.6C9.5 12.2287 9.64298 11.8726 9.8975 11.6101C10.152 11.3475 10.4972 11.2 10.8571 11.2ZM1.35714 5.6H17.6429C18.0028 5.6 18.348 5.7475 18.6025 6.01005C18.857 6.2726 19 6.6287 19 7C19 7.3713 18.857 7.7274 18.6025 7.98995C18.348 8.2525 18.0028 8.4 17.6429 8.4H1.35714C0.997206 8.4 0.652012 8.2525 0.397498 7.98995C0.142984 7.7274 0 7.3713 0 7C0 6.6287 0.142984 6.2726 0.397498 6.01005C0.652012 5.7475 0.997206 5.6 1.35714 5.6Z"
+                                fill="white" />
+                        </svg>
+
+                    </button>
+                </div>
+            </nav>
+            <!-- Mobile menu, show/hide based on menu open state. -->
+            <div class="hidden md:hidden" role="dialog" aria-modal="true" id="side-menu">
+                <!-- Background backdrop, show/hide based on slide-over state. -->
+                <div class="fixed inset-0 z-50"></div>
+                <div
+                    class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-bg px-8 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+                    <div class="flex items-center justify-between">
+                        <div></div>
+                        <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-200 menu-nav">
+                            <span class="sr-only">Close menu</span>
+                            <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" aria-hidden="true">
+                                <circle cx="11.5" cy="11.5" r="11" stroke="url(#paint0_linear_416_1035)" />
+                                <path
+                                    d="M6.3075 16.6925C6.50446 16.8894 6.77155 17 7.05005 17C7.32854 17 7.59563 16.8894 7.79259 16.6925L11.5063 12.9787L15.2201 16.6925C15.4182 16.8838 15.6835 16.9897 15.9589 16.9873C16.2342 16.9849 16.4977 16.8744 16.6924 16.6797C16.8871 16.485 16.9976 16.2216 17 15.9462C17.0024 15.6708 16.8965 15.4055 16.7052 15.2074L12.9914 11.4937L16.7052 7.77991C16.8965 7.58182 17.0024 7.31652 17 7.04114C16.9976 6.76577 16.8871 6.50235 16.6924 6.30762C16.4977 6.11289 16.2342 6.00243 15.9589 6.00004C15.6835 5.99765 15.4182 6.10351 15.2201 6.29482L11.5063 10.0086L7.79259 6.29482C7.5945 6.10351 7.3292 5.99765 7.05383 6.00004C6.77845 6.00243 6.51503 6.11289 6.3203 6.30762C6.12557 6.50235 6.01511 6.76577 6.01272 7.04114C6.01033 7.31652 6.11619 7.58182 6.3075 7.77991L10.0213 11.4937L6.3075 15.2074C6.11061 15.4044 6 15.6715 6 15.95C6 16.2284 6.11061 16.4955 6.3075 16.6925Z"
+                                    fill="#F8F8F8" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_416_1035" x1="11.5" y1="0" x2="11.5" y2="23"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#903AFF" />
+                                        <stop offset="1" stop-color="#FF26B9" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+
+                        </button>
+                    </div>
+                    <div class="mt-6 flow-root">
+                        <div class="-my-6 ">
+                            <div class="space-y-2 py-6">
+                                <a href="/"
+                                    class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-purple-100 hover:bg-bg/90">Timeline</a>
+                                <a href="./about.html"
+                                    class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-purple-100 hover:bg-bg/90">Overview</a>
+                                <a href="./services.html"
+                                    class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-purple-100 hover:bg-bg/90">FAQs</a>
+                                <a href="./contact.html"
+                                    class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-purple-100 hover:bg-bg/90">Contact</a>
+                            </div>
+                            <div class="py-6">
+                                <button
+                                    class="px-8 rounded-sm py-2 hover:bg-gradient-to-tr ease-out duration-300 bg-gradient-to-r to-[#903AFF] from-[#FE34B9] text-white">Register</button>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <img src="./assets/contact/star.png" alt="" class="absolute bottom-[10%] w-4 right-[10%] blink_star_alt">
+        <div class="grid md:grid-cols-2 grid-cols-1 gap-8 max-w-7xl mx-auto my-24">
+            <div class="relative">
+                
+            <img src="./assets/contact/star_icon.png" alt="" class="absolute top-0 right-0 blink_star_alt2">
+            <img src="./assets/contact/sata_gra.png" alt="" class="absolute bottom-[50%] w-2 left-5 blink_star_alt">
+
+                <img src="./assets/home/3d-graphic-designer-showing-thumbs-up-png 1.png" alt=""
+                    class="w-[70%] md:w-fit">
+            </div>
+            <div class="bg-white/[3%] p-8 md:p-12 rounded-md mx-2 md:mx-4 shadow-md ">
+
+                <h3 class="clash-font text-3xl text-primary font-bold">Register</h3>
+                <p class="text-md my-6 text-white flex "><span class="">Be a part of this movement!</span> <span
+                        class="relative">
+                        <img src="./assets/contact/people.png" alt="" class="w-10 absolute -top-[45%] left-[25%]">
+                        <span class="text-primary  -bottom-1"> &nbsp;.............</span></span> </p>
+
+                <p class="text-2xl text-white font-bold my-6">CREATE YOUR ACCOUNT</p>
+                <div>
+
+
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+                        <div class="">
+                            <label for="" class="text-white text-md ">Team’s Name</label>
+                            <input type="text" placeholder="Enter the name of your group"
+                                class="border mt-2 shadow-md text-white border-white inline-block w-full p-2 rounded-sm placeholder:text-stroke bg-white/[3%]" />
+                        </div>
+                        <div class="">
+                            <label for="" class="text-white text-md ">Phone</label>
+                            <input type="text" placeholder="Enter your phone number"
+                                class="border mt-2 shadow-md text-white border-white inline-block w-full p-2 rounded-sm placeholder:text-stroke bg-white/[3%]" />
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+                        <div class="">
+                            <label for="" class="text-white text-md ">Email</label>
+                            <input type="text" placeholder="Enter your email address"
+                                class="border mt-2 shadow-md text-white border-white inline-block w-full p-2 rounded-sm placeholder:text-stroke bg-white/[3%]" />
+                        </div>
+                        <div class="">
+                            <label for="" class="text-white text-md ">Project Topic</label>
+                            <input type="text" placeholder="What is your group project topic"
+                                class="border mt-2 shadow-md text-white border-white inline-block w-full p-2 rounded-sm placeholder:text-stroke bg-white/[3%]" />
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+
+                        <div class="">
+                            <label for="category" class="text-white text-md ">Category</label>
+                            <select type="text" id="category"
+                                class="border mt-2 shadow-md text-white border-white inline-block w-full p-2 rounded-sm placeholder:text-stroke bg-white/[3%]">
+                                <option>Select your category</option>
+                            </select>
+                        </div>
+                        <div class="">
+                            <label for="groupSize" class="text-white text-md ">Group Size</label>
+                            <select type="text" id="groupSize"
+                                class="border mt-2 shadow-md text-white border-white inline-block w-full p-2 rounded-sm placeholder:text-stroke bg-white/[3%]">
+                                <option>Select</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <p class="text-sm text-primary2 my-4 italic">Please review your registration details before
+                        submitting</p>
+
+                    <input type="checkbox" id="terms">
+                    <label for="terms" class="text-white text-md ">I agreed with the event terms and conditions and
+                        privacy policy</label>
+                    <button
+                        
+                        class="px-8 w-full regBtn rounded-sm py-4 my-8 hover:bg-gradient-to-tr ease-out duration-300 bg-gradient-to-r to-[#903AFF] from-[#FE34B9] text-white">Register
+                        NOW</button>
+
+                    </div>
+
+
+
+            </div>
+
+        </div>
+    </header>
+    <div id="regModal" class="fixed duration-300 ease-out hidden h-screen w-screen bg-bg/[93%] top-0 left-0 right-0 px-8 py-12">
+        <div class="max-w-3xl p-16 mx-auto border my-16 border-primary relative">
+            <img src="./assets/contact/star_icon.png" alt="" class="absolute top-0 right-0 blink_star">
+            <img src="./assets/contact/sata_gra.png" alt="" class="absolute bottom-2 right-0 blink_star_alt">
+            
+            <img src="./assets/contact/star.png" alt="" class="absolute top-[25%] w-6 left-5 blink_star_alt2">
+            <img src="./assets/contact/congratulation.png" alt="" class="mx-auto w-[50%]">
+            <h3 class="text-2xl text-center text-white font-bold">
+                Congratulations
+                you have successfully Registered!
+            </h3>
+            <div class="flex items-center mt-6 justify-center">
+
+                <p class="text-md text-white">Yes, it was easy and you did it!
+                    check your mail box for next step</p>
+                <img src="./assets/contact/1531010992wink-emoji-woman-png 1.png" alt="" class="ml-2">
+
+                </p>
+            </div>
+            <button
+            class="px-8 w-full regBtn rounded-sm py-4 my-8 hover:bg-gradient-to-tr ease-out duration-300 bg-gradient-to-r to-[#903AFF] from-[#FE34B9] text-white">Back</button>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+        <script src="./js/nav_scroll.js"></script>
+        <script src="./js/misc.js"></script>
+
+        <script src="./js/api.js"></script>
+</body>
+
+</html>
