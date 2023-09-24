@@ -660,6 +660,10 @@ video {
   top: -2rem;
 }
 
+.-top-\[10\%\] {
+  top: -10%;
+}
+
 .-top-\[20\%\] {
   top: -20%;
 }
@@ -742,14 +746,6 @@ video {
 
 .top-\[25\%\] {
   top: 25%;
-}
-
-.-top-\[70\%\] {
-  top: -70%;
-}
-
-.-top-\[10\%\] {
-  top: -10%;
 }
 
 .isolate {
@@ -1083,10 +1079,6 @@ video {
 .min-h-fit {
   min-height: -moz-fit-content;
   min-height: fit-content;
-}
-
-.min-h-screen {
-  min-height: 100vh;
 }
 
 .w-1 {
@@ -2250,6 +2242,10 @@ video {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
+.bg-gradient-to-tr {
+  background-image: linear-gradient(to top right, var(--tw-gradient-stops));
+}
+
 .from-\[\#FE34B9\] {
   --tw-gradient-from: #FE34B9 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(254 52 185 / 0) var(--tw-gradient-to-position);
@@ -2583,6 +2579,11 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
 }
 
 .font-bold {
@@ -2990,6 +2991,12 @@ video {
           backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
+.backdrop-blur-md {
+  --tw-backdrop-blur: blur(12px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+
 .backdrop-grayscale {
   --tw-backdrop-grayscale: grayscale(100%);
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
@@ -3066,9 +3073,6 @@ body{
 }
 
 html {
-}
-
-*{
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -3338,10 +3342,6 @@ html {
     display: none;
   }
 
-  .md\:h-0 {
-    height: 0px;
-  }
-
   .md\:h-8 {
     height: 2rem;
   }
@@ -3448,6 +3448,11 @@ html {
   .md\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+
+  .md\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
   }
 }
 
