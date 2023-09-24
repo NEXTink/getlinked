@@ -7,7 +7,7 @@ const animatedComponents = new Set();
 
 
 function animateComponent(component) {
-    gsap.set(component, { opacity: 0, y: 50 });
+    gsap.set(component, { opacity: 0, y: 80 });
 
     gsap.to(component, {
         opacity: 1,
