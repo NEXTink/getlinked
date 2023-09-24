@@ -920,6 +920,10 @@ video {
   margin-top: 8rem;
 }
 
+.mt-36 {
+  margin-top: 9rem;
+}
+
 .mt-4 {
   margin-top: 1rem;
 }
@@ -2581,11 +2585,6 @@ video {
   line-height: 1rem;
 }
 
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
-}
-
 .font-bold {
   font-weight: 700;
 }
@@ -3123,6 +3122,11 @@ html {
   100% {
     transform: translateX(-2);
   }
+}
+
+.hover-effect:hover{
+  transform: scale(1.1) rotate(5deg);
+  transition: all .35s ease;
 }
 
 @media (min-width: 640px) {

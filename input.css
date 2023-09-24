@@ -55,3 +55,8 @@ html {
     100% {transform: translateX(-2);  } 
     
 }
+
+.hover-effect:hover{
+    transform: scale(1.1) rotate(5deg);
+    transition: all .35s ease;
+}
