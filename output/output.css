@@ -1096,10 +1096,6 @@ video {
   height: 100vh;
 }
 
-.max-h-screen {
-  max-height: 100vh;
-}
-
 .min-h-fit {
   min-height: -moz-fit-content;
   min-height: fit-content;
@@ -3249,23 +3245,32 @@ html {
 }
 
 .wrapper {
-  width:400px;
+  width:55rem;
   /* height:400px; */
   position: absolute;
   transform-style: preserve-3d;
   transition: transform 1s;
   height: 500rem;
+  @media (ax-width:25em) {
+    /* width: 100%; */
+
+    width:25rem;
+  }
 }
 
 .hacker_guy {
-  /* image is 460px x 460px */
-  width:650px;
-  height:15px;
+  width:55rem;
+  height:1.9rem;
   /* 50 divisions */
   background-image: url('../assets/hacker_guy.png');
   background-size: cover;
   backface-visibility: visible;
   animation: turner 20s infinite;
+  @media (ax-width:25em) {
+    /* width: 100%; */
+
+    width:25rem;
+  }
 }
 
 .one {
@@ -3589,6 +3594,16 @@ html {
     max-width: 24rem;
   }
 
+  .sm\:-translate-x-\[50\%\] {
+    --tw-translate-x: -50%;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .sm\:-translate-x-\[70\%\] {
+    --tw-translate-x: -70%;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
   .sm\:grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
@@ -3737,6 +3752,11 @@ html {
 
   .md\:-translate-x-\[50\%\] {
     --tw-translate-x: -50%;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .md\:translate-x-0 {
+    --tw-translate-x: 0px;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 

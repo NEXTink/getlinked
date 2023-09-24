@@ -131,21 +131,32 @@ html {
   
 }
 .wrapper {
-  width:400px;
+    width:55rem;
   /* height:400px; */
   position: absolute;
   transform-style: preserve-3d;
   transition: transform 1s;
-  height: 500rem;
+  height: 500rem; @media (ax-width:25em) {
+    /* width: 100%; */
+    
+    width:25rem;
+  }
+
 }
 
-.hacker_guy { /* image is 460px x 460px */
-  width:650px;
-  height:15px; /* 50 divisions */
+.hacker_guy { 
+    width:55rem;
+  height:1.9rem; /* 50 divisions */
   background-image: url('../assets/hacker_guy.png');
   background-size: cover;
   backface-visibility: visible;
   animation: turner 20s infinite;
+  @media (ax-width:25em) {
+    /* width: 100%; */
+    
+    width:25rem;
+  }
+
 }
 .one {
   background-position:0 0;
