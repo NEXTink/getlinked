@@ -179,10 +179,28 @@
         </div>
     </header>
 
+    <div id="spinner" class="bg-bg h-screen w-screen z-40 fixed p-4 top-0 left-0 right-0 bottom-0">
+        <div class="lds-ripple"><div></div><div></div></div>
+    </div>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
    
     <script src="./js/misc.js"></script>
+    <script >
+        document.onreadystatechange = function() {
+            if (document.readyState !== "complete") {
+                document.querySelector(
+                  "body").style.visibility = "hidden";
+                document.querySelector(
+                  "#spinner").style.visibility = "visible";
+            } else {
+                document.querySelector(
+                  "#spinner").style.display = "none";
+                document.querySelector(
+                  "body").style.visibility = "visible";
+            }
+        };
+    </script>
     
 </body>
 
